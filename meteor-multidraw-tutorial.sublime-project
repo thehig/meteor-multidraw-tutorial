@@ -2,8 +2,24 @@
 	"folders":
 	[
 		{
+      "name": "root",
 			"path": ".",
-      "folder_exclude_patterns": ["node_modules", ".meteor"]
-		}
+      "folder_exclude_patterns": ["*"]
+		},
+    {
+      "path": "app",
+      "folder_exclude_patterns": [
+        "client", 
+        "server", 
+        ".meteor", 
+        "node_modules"
+      ]
+    },
+    {
+      "path": "app/client"
+    },
+    {
+      "path": "app/server"
+    }
 	]
 }
