@@ -1,11 +1,32 @@
 {
-  "name": "app",
-  "private": true,
+  "name": "meteor-multidraw-tutorial",
+  "version": "1.0.0",
+  "description": "* http://www.ripariandata.com/blog/real-time-multiuser-drawing-with-meteor\r * http://rafaelquintanilha.com/real-time-charts-with-meteor-react-and-d3/",
+  "main": "index.js",
   "scripts": {
-    "start": "meteor run"
+    "start": "meteor run",
+    "lint": "eslint --ext js --ext jsx ."
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thehig/meteor-multidraw-tutorial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thehig/meteor-multidraw-tutorial/issues"
+  },
+  "homepage": "https://github.com/thehig/meteor-multidraw-tutorial#readme",
   "dependencies": {
     "babel-runtime": "^6.20.0",
     "meteor-node-stubs": "~0.2.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.9.0"
   }
 }
