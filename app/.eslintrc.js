@@ -22,5 +22,10 @@ module.exports = {
     "react/prefer-stateless-function": "off",
     "linebreak-style": "off",
     "no-useless-constructor": "warn",
+
+    // Don't play well with Meteors implicit imports
+    "import/no-extraneous-dependencies": "off",
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
   }
 };
