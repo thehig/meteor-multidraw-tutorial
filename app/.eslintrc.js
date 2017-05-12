@@ -5,6 +5,9 @@ module.exports = {
     "node": true,
     "jest": true,
   },
+  "globals": {
+    "Meteor": true
+  },
   "extends": "airbnb",
   "plugins": [
       "react",

@@ -1,15 +1,13 @@
-Beers = new Meteor.Collection("Beers");
+const Beers = new Meteor.Collection('Beers');
 
 Meteor.methods({
-  "insertBeer": function(numBeers, date) {
-    numBeers = parseInt(numBeers);
-
-    check(numBeers, Number);
+  insertBeer(numBeers, date) {
+    check(parseInt(numBeers, 10), Number);
     check(date, Date);
 
-    return Beers.insert({ beers: numBeers, date: date });
+    return Beers.insert({ beers: numBeers, date });
   },
-  "removeBeer": function(id) {
+  removeBeer(id) {
     check(id, String);
     return Beers.remove(id);
   },
